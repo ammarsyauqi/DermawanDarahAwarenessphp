@@ -1,0 +1,161 @@
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+header {
+    padding: 20px;
+    background-color: #333;
+    color: white;
+    text-align: center;
+}
+
+#backbtn {
+
+    border: none;
+    color: white;
+    padding: 12px 16px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+
+#backbtn:hover {
+    color: RoyalBlue;
+}
+
+main {
+    display: grid;
+    grid-template-rows: auto 1fr 1fr 1fr 1fr 1fr auto;
+    height: 100vh;
+}
+
+section {
+
+    text-align: center;
+    color: white;
+    width: 100%;
+    height: 50vh;
+    box-sizing: border-box;
+
+}
+
+section {
+
+    text-align: center;
+    color: white;
+    width: 100%;
+    height: 50vh;
+    box-sizing: border-box;
+
+}
+
+/* Section-specific styles */
+
+#banner {
+    background-color: #fff;
+    height: 70vh;
+    padding: 30px 0 0 0;
+}
+
+#info_1,
+#info_2,
+#info_3,
+#info_4 {
+    background-image: url('images/typbg.gif');
+    background-size: contain;
+    height: 100vh;
+    width: auto;
+    padding: 50px 0 20px 0;
+
+}
+
+#info_2 {
+    background-image: url('images/typbg2.gif');
+    background-size: contain;
+}
+
+#info_3 {
+    background-image: url('images/typbg.gif');
+    background-size: contain;
+}
+
+#info_4 {
+    background-image: url('images/typbg2.gif');
+    background-size: contain;
+}
+
+
+
+.info_1image,
+.info_2image,
+.info_3image,
+.info_4image {
+    height: auto;
+    width: 30%;
+}
+
+footer {
+    position: absolute;
+    width: 100%;
+    padding: 20px;
+    background-color: #555;
+    text-align: center;
+    color: white;
+}
+
+.banner-image {
+    height: auto;
+    width: 60%;
+}
+
+
+
+/*responsive*/
+@media only screen and (max-width: 600px) {
+    header {
+        padding: 20px;
+    }
+
+    main {
+        grid-template-rows: auto repeat(5, 1fr) auto;
+    }
+
+    section {
+        padding: 10px;
+    }
+
+    .banner-image {
+        width: 100%;
+        height: auto;
+        max-height: none;
+    }
+
+    #banner {
+        height: auto;
+        /* Adjust height for smaller screens */
+        padding: 0 10px;
+        bottom: 0;
+    }
+
+
+    #info_1,
+    #info_2,
+    #info_3,
+    #info_4 {
+        height: auto;
+        /* Adjust height for smaller screens */
+        padding: 20px 5% 20px 5%;
+        margin-top: -1%;
+
+    }
+
+    .info_1image,
+    .info_2image,
+    .info_3image,
+    .info_4image {
+        width: 100%;
+        height: auto;
+        max-height: none;
+    }
+}
